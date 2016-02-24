@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Shadowlong/chat-room.git"
+    "url": "https://github.com/ShadowTeamWOW/chat-room.git"
   },
   "author": "Shadowlong Chang, PTT, Coco",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Shadowlong/chat-room/issues"
+    "url": "https://github.com/ShadowTeamWOW/chat-room/issues"
   },
-  "homepage": "https://github.com/Shadowlong/chat-room",
+  "homepage": "https://github.com/ShadowTeamWOW/chat-room",
   "dependencies": {
     "body-parser": "^1.14.1",
     "connect-redis": "^3.0.2",
