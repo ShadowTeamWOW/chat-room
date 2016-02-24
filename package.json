@@ -1,0 +1,30 @@
+{
+  "name": "chat-room",
+  "version": "1.0.0",
+  "description": "Test project with NodeJS, express, socket.io, etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shadowlong/chat-room.git"
+  },
+  "author": "Shadowlong Chang, PTT, Coco",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Shadowlong/chat-room/issues"
+  },
+  "homepage": "https://github.com/Shadowlong/chat-room",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "connect-redis": "^3.0.2",
+    "cookie-parser": "^1.4.0",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "formidable": "^1.0.17",
+    "log4js": "^0.6.29",
+    "log4js-node-mongodb": "^0.1.5",
+    "socket.io": "^1.4.4"
+  }
+}
