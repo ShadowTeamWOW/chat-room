@@ -26,5 +26,9 @@
     "log4js": "^0.6.29",
     "log4js-node-mongodb": "^0.1.5",
     "socket.io": "^1.4.4"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.0.5"
   }
 }
