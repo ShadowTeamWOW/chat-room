@@ -4,11 +4,15 @@
  *
  * Created by Shadowlong on 15/12/1.
  */
-module.exports = function(req, res){
+module.exports = {
 
-    res.json({
-        status: 200,
-        msg: 'Good job!'
-    });
+    index: function(req, res){
+
+        res.json({
+            status: 200,
+            msg: 'Good job!'
+        });
+
+    }
 
 };

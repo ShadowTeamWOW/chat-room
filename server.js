@@ -36,9 +36,7 @@ app.listen(5991, function(){
 
     const port = this.address().port;
 
-    console.log('Server -Woshuo.co- is listening at 127.0.0.1:'+ port);
-
-    // Connect to Woshuo server from socket.io
+    console.log('Server is listening at 127.0.0.1:'+ port);
 
 });
 
