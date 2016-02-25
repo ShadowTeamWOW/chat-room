@@ -1,0 +1,45 @@
+.triangle(top,@w:5px,@c:#ccc){
+  border-width: @w;
+  border-color: transparent transparent @c transparent;
+  border-style: dashed dashed solid dashed;
+}
+.triangle(bottom,@w:5px,@c:#ccc){
+  border-width: @w;
+  border-color: @c transparent transparent transparent;
+  border-style: solid dashed dashed dashed;
+}
+.triangle(left,@w:5px,@c:#ccc){
+  border-width: @w;
+  border-color: transparent @c transparent transparent;
+  border-style: dashed solid dashed dashed;
+}
+.triangle(right,@w:5px,@c:#ccc){
+  border-width: @w;
+  border-color: transparent transparent transparent @c;
+  border-style: dashed dashed dashed solid;
+}
+.triangle(@_,@w:5px,@c:#ccc){
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.box(@ori:vertical){
+  display: -webkit-box;
+  -webkit-box-orient: @ori;
+}
+.pack{
+  -webkit-box-pack:center;
+}
+.center{
+  -webkit-box-align: center;
+}
+.flex{
+  -webkit-box-flex:1;
+}
+.justify{
+  -webkit-box-pack:justify;
+}
+.align{
+  text-align: center;
+}

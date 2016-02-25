@@ -1,0 +1,369 @@
+@charset "utf-8";
+html,
+body {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+header,
+section,
+footer,
+nav,
+figure,
+figcaption,
+article,
+menu {
+  display: block;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+ol,
+ul {
+  list-style: none;
+}
+a,
+li {
+  text-decoration: none;
+  list-style: none outside none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+input:focus {
+  outline: none;
+}
+.pack {
+  -webkit-box-pack: center;
+}
+.center {
+  -webkit-box-align: center;
+}
+.flex {
+  -webkit-box-flex: 1;
+}
+.justify {
+  -webkit-box-pack: justify;
+}
+.align {
+  text-align: center;
+}
+.loginBox {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+}
+.loginBox .personMsg {
+  width: 500px;
+  height: 500px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+}
+.loginBox .personMsg li {
+  margin: 15px 0;
+}
+.loginBox .personMsg li label {
+  display: inline-block;
+  width: 95px;
+  text-align: right;
+}
+.loginBox .personMsg .gPW {
+  position: relative;
+}
+.loginBox .personMsg .gPW a {
+  display: block;
+  position: absolute;
+  font-size: 10px;
+  right: 0;
+  color: #000;
+  bottom: -25px;
+}
+.loginBox .personMsg .gender {
+  margin-top: 30px;
+}
+.loginBox .personMsg .gender label {
+  width: 20px;
+}
+.loginBox .personMsg .gender .firstLabel {
+  padding-right: 20px;
+}
+.loginBox .personMsg .inBtn {
+  margin-top: 45px;
+}
+.loginBox .personMsg .inBtn a {
+  padding: 10px 20px;
+  background: lightblue;
+  border-radius: 5px;
+  color: #fff;
+}
+.loginBox .personMsg .inBtn a:active {
+  background: #58B2D0;
+  color: inherit;
+}
+.loginBox .personMsg .comBtn {
+  margin-top: 20px;
+}
+.loginBox .personMsg input {
+  border: none;
+  background: none;
+  border-bottom: 1px solid black;
+}
+.loginBox .personMsg input:focus {
+  border-bottom: 1px solid lightskyblue;
+}
+.chatWrap {
+  width: 500px;
+  height: 500px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.chatWrap .chatContent {
+  width: 100%;
+  height: 450px;
+  overflow: scroll;
+}
+.chatWrap .chatContent .chatList {
+  padding-top: 10px;
+}
+.chatWrap .chatContent .chatList li {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  padding: 5px 10px;
+  -webkit-box-align: start;
+}
+.chatWrap .chatContent .chatList li .avatar {
+  display: block;
+  width: 26px;
+  height: 26px;
+  border-radius: 13px;
+  border: 1px solid bisque;
+  overflow: hidden;
+}
+.chatWrap .chatContent .chatList li .avatar img {
+  height: 100%;
+  width: 100%;
+}
+.chatWrap .chatContent .chatList li .msg {
+  display: block;
+  line-height: 25px;
+  max-width: 400px;
+  background: #b0e0e6;
+  border-radius: 5px;
+  color: #fff;
+  position: relative;
+}
+.chatWrap .chatContent .chatList li .msg i {
+  position: absolute;
+}
+.chatWrap .chatContent .chatList li .msg i.right {
+  top: 5px;
+  right: -16px;
+}
+.chatWrap .chatContent .chatList li .msg i.left {
+  top: 6px;
+  left: -16px;
+}
+.chatWrap .chatContent .chatList li .msg i.sanjiaoR {
+  border-width: 10px;
+  border-color: transparent transparent transparent #b0e0e6;
+  border-style: dashed dashed dashed solid;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.chatWrap .chatContent .chatList li .msg i.sanjiaoL {
+  border-width: 10px;
+  border-color: transparent #b0e0e6 transparent transparent;
+  border-style: dashed solid dashed dashed;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.chatWrap .chatContent .chatList li.other {
+  -webkit-box-pack: start;
+}
+.chatWrap .chatContent .chatList li.other .msg {
+  margin-left: 9px;
+  padding: 5px;
+}
+.chatWrap .chatContent .chatList li.myself {
+  -webkit-box-pack: end;
+}
+.chatWrap .chatContent .chatList li.myself .msg {
+  margin-right: 9px;
+  padding: 5px;
+}
+.chatWrap .inWord {
+  height: 50px;
+  width: 100%;
+  border-top: 1px solid #cccccc;
+  position: relative;
+}
+.chatWrap .inWord textarea {
+  border: none;
+  height: 50px;
+  resize: none;
+  line-height: 20px;
+  word-break: break-all;
+  word-wrap: break-word;
+  overflow: hidden;
+  width: 100%;
+  outline: none;
+}
+.chatWrap .inWord .send {
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+  padding: 5px;
+  background: #ccc;
+  color: #fff;
+  font-size: 10px;
+}
+.chatWrap .inWord .send:active {
+  color: #b0e0e6;
+}
+.room-list {
+  width: 500px;
+  height: 500px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  text-align: center;
+}
+.room-list li {
+  height: 30px;
+}
+.room-list li a {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  color: #000;
+}
+.room-list li a:hover {
+  background: #b0e0e6;
+  color: #fff;
+}
