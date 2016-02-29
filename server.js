@@ -18,6 +18,7 @@ const bodyParser = require('body-parser');
 const config     = require('./config/config_loader');
 const router     = require('./routes/route_loader');
 const env        = require('./helpers/helper_loader')('env');
+const exphbs     = require('express-handlebars');
 const io         = require('socket.io'); // Client side for connect to woshuo server
 
 // Set view folder
