@@ -23,6 +23,7 @@
     "express": "^4.13.4",
     "express-session": "^1.13.0",
     "formidable": "^1.0.17",
+    "express-handlebars": "*",
     "log4js": "^0.6.29",
     "log4js-node-mongodb": "^0.1.5",
     "socket.io": "^1.4.4"
