@@ -7,23 +7,28 @@
 </head>
 <body>
 <div class="loginBox">
-    <ul class="personMsg">
-        <li><label for="user_name">userName：</label>
-            <input type="text" id="user_name"  name="username"/></li>
-        <li><label for="email">email：</label>
-            <input type="text" id="email"  name="email"/></li>
-        <li class="gPW"><label for="pass_word">passWord：</label>
-            <input type="text" id="pass_word" name="password" value="password"/><a href="#">forget password?</a></li>
-        <li class="gender">
 
-            <input type="radio" id="girl" name="gender" />
+    <form action="" name="regUser" class="regUser">
+        <ul class="personMsg">
+            <li><label for="user_name">userName：</label>
+                <input type="text" id="user_name"  name="username" value="{{username}}"/></li>
+            <li><label for="email">email：</label>
+                <input type="text" id="email"  name="email" value="{{email}}"/></li>
+            <li class="gPW"><label for="pass_word">passWord：</label>
+                <input type="text" id="pass_word" name="password" value="{{password}}"/><a href="#">forget password?</a></li>
+            <li class="gender">
+
+                <input type="radio" id="girl" name="gender" {{#if sex == 1}} checked {{/if}}/>
                 <label for="girl" class="firstLabel">girl</label>
-                <input type="radio" id="boy" name="gender"/>
+                <input type="radio" id="boy" name="gender" {{#if sex == 0}} checked {{/if}}/>
                 <label for="boy">boy</label></li>
 
 
-        <li class="inBtn comBtn"><a href="#">sure?</a></li>
-    </ul>
+            <li class="inBtn comBtn"><a href="#">sure?</a></li>
+        </ul>
+
+    </form>
+
 
 </div>
 
