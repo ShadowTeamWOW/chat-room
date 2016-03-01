@@ -11,16 +11,16 @@
     <form action="" name="regUser" class="regUser">
         <ul class="personMsg">
             <li><label for="user_name">userName：</label>
-                <input type="text" id="user_name"  name="username" value="{{username}}"/></li>
+                <input type="text" id="user_name"  name="username" value="<%=user%>"/></li>
             <li><label for="email">email：</label>
-                <input type="text" id="email"  name="email" value="{{email}}"/></li>
+                <input type="text" id="email"  name="email" value="<%=email%>"/></li>
             <li class="gPW"><label for="pass_word">passWord：</label>
-                <input type="text" id="pass_word" name="password" value="{{password}}"/><a href="#">forget password?</a></li>
+                <input type="text" id="pass_word" name="password" value="<%=password%>"/><a href="#">forget password?</a></li>
             <li class="gender">
 
-                <input type="radio" id="girl" name="gender" {{#if sex == 1}} checked {{/if}}/>
+                <input type="radio" id="girl" name="gender" <% if (sex ==0){%>  checked <%}%>/>
                 <label for="girl" class="firstLabel">girl</label>
-                <input type="radio" id="boy" name="gender" {{#if sex == 0}} checked {{/if}}/>
+                <input type="radio" id="boy" name="gender" <% if (sex ==1){%>  checked <%}%>/>
                 <label for="boy">boy</label></li>
 
 
