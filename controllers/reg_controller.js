@@ -8,13 +8,15 @@
 
 module.exports = {
 
-    reg: function(req, res){
+    reg: function (req, res) {
 
-        res.render('register',{
-            user:'张三',
-            email:'1233@qq.com',
-            password:'111111',
-            sex:'0'});
+        res.render('register', { });
+    },
+    regDB: function (req, res) {
+        var bodyData = req.body;
+        res.send({code: '200', msg: 'suss1'});
+        res.end();
+
     }
 
 };
