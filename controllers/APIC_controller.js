@@ -20,6 +20,14 @@ module.exports = {
             message: 'Everything is working fine.'
         });
 
+    },
+    login: function(req, res){
+        res.json({
+            status: 1,
+            msg:'OK'
+
+        });
+
     }
 
 };

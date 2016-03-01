@@ -20,6 +20,7 @@ const router     = require('./routes/route_loader');
 const env        = require('./helpers/helper_loader')('env');
 const ejs        = require('ejs');
 const io         = require('socket.io'); // Client side for connect to woshuo server
+const mid        = require('./middlewares/valid');
 
 // Set view folder
 app.set('views', path.join(__dirname, 'views'));
@@ -36,12 +37,14 @@ app.set('view engine', 'html');
 // Set Public folder as www root
 app.use(express.static('public'));
 
+//Use middlewares
+app.use(mid.validToken);
+
 // Use body parser for handle post requests
 app.use( bodyParser() );
 
 // Routes Main entrance
 router(app);
-
 
 app.listen(5991, function(){
 
