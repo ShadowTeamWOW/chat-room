@@ -217,7 +217,6 @@ input:focus {
 }
 .loginBox .personMsg .inBtn a:active {
   background: #58B2D0;
-  color: inherit;
 }
 .loginBox .personMsg .comBtn {
   margin-top: 20px;
