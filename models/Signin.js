@@ -12,7 +12,7 @@ const dbConfig = require('../config/database');
 module.exports = {
 
     //
-    signin: function(username, passwd){
+    signin: function(username, passwd, callback){
 
         // Connect to mongoDB
         MongoClient.connect(dbConfig.mongoURL, function(err, db){
@@ -38,6 +38,8 @@ module.exports = {
                 }
 
                 console.log(doc);
+
+                callback(err, doc);
 
             });
 
