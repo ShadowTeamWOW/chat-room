@@ -15,7 +15,10 @@ $(function(){
                 alert('请输入密码');
 
             }else{
-                $.post('/APIC/login',{},function(res){
+                let userName = $container.find('#user_name').val();
+                let passWord = $container.find('#pass_word').val();
+
+                $.post('/APIC/login',{userName,passWord},function(res){
 
                         console.log(res);
 
