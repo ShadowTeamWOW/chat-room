@@ -18,18 +18,19 @@ const bodyParser = require('body-parser');
 const config     = require('./config/config_loader');
 const router     = require('./routes/route_loader');
 const env        = require('./helpers/helper_loader')('env');
-const exphbs     = require('express-handlebars');
+const ejs        = require('ejs');
 const io         = require('socket.io'); // Client side for connect to woshuo server
 
 // Set view folder
 app.set('views', path.join(__dirname, 'views'));
 
-app.engine('hbs', exphbs({
-    layoutsDir: 'views',
-    extname: '.hbs'
-}));
+app.set("view options",{
+    "layout":false
+});
 
-app.set('view engine', 'hbs');
+app.engine('.html', ejs.__express);
+
+app.set('view engine', 'html');
 
 
 // Set Public folder as www root
