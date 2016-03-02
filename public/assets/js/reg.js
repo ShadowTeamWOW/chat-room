@@ -1,15 +1,17 @@
-var userUL = $('.loginBox');
 
 
-var loginBut = userUL.find('.inBtn');
+'use strict';
 
-var msg = '';
+const userUL = $('.loginBox');
+const loginBut = userUL.find('.inBtn');
+let msg = '';
+/*拼接模板字符串  ${变量名} */
 loginBut.on('click', function () {
 
-    var usreNa = userUL.find('#user_name').val();
-    var emails = userUL.find('#email').val();
-    var psword = userUL.find('#pass_word').val();
-    var sex1 = $("input:radio[name='gender']:checked").attr('id')
+    let usreNa = userUL.find('#user_name').val();
+    let emails = userUL.find('#email').val();
+    let psword = userUL.find('#pass_word').val();
+    let sex1 = $("input:radio[name='gender']:checked").attr('id')
 
     if (!usreNa) {
         msg = '用户名不可以为空';
@@ -45,6 +47,9 @@ loginBut.on('click', function () {
             console.log(data.msg);
         }
     });
+
+
+
 
 
 });
